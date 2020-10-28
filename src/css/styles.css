@@ -84,8 +84,9 @@ body {
 }
 
 #ourAgents img {
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding-left: 40px;
+  padding-right: 40px; 
+}
 
 .ourAgents .card {
   border: none; }

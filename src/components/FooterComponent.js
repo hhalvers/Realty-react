@@ -20,7 +20,7 @@ function Footer(props) {
                             <label for="inlineFormInputGroupUsername2">
                                 <h5>Sign up for our Newsletter </h5>
                             </label>
-                            <div class="input-group mb-2 mr-sm-2 ml-sm-2">
+                            <div className="input-group mb-2 mr-sm-2 ml-sm-2">
 
                                 <input type="text" className="form-control" id="inlineFormInputGroupUsername2" placeholder="email address" />
             </div>
@@ -33,8 +33,8 @@ function Footer(props) {
 
 
                 </div>
-                <div class="container-fluid" id="page-footer">
-                    <div class="row">
+                <div className="container-fluid" id="page-footer">
+                    <div className="row">
                         <div className="col-sm-4">
                         <FontAwesomeIcon icon={faPhone} size="3x" /> 
                             <h3>Phone</h3>

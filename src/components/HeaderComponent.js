@@ -6,8 +6,9 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink
+    
 } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitter, faYoutube, faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -58,33 +59,34 @@ class Header extends Component {
                             <Nav className="ml-auto" navbar-right="true" navbar>
                                 <NavItem>
                                     <NavLink className="nav-link active" to="/home">
-                                        <i className="fa fa-home fa-lg" /> Home
+                                        Home
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/forSale">
+                                        For Sale
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/forRent">
+                                         For Rent
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/contactus">
-                                        <i className="fa fa-address fa-lg" /> For Sale
+                                         Contact Us
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/directory">
-                                        <i className="fa fa-list fa-lg" /> For Rent
+                                    <NavLink className="nav-link" to="/map">
+                                         Map
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/aboutus">
-                                        <i className="fa fa-info fa-lg" /> Contact Us
+                                    <NavLink className="nav-link" to="/agents">
+                                         Our Agents
                                     </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/contactus">
-                                        <i className="fa fa-address fa-lg" /> Map
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/contactus">
-                                        <i className="fa fa-address fa-lg" /> Our Agents
-                                    </NavLink>
+                                    
                                 </NavItem>
                             </Nav>
                         </Collapse>

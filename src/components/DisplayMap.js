@@ -13,8 +13,8 @@ function DisplayMap() {
             <div clas="row">
               <div className="col">
                 <div id="map-container-google-1" className="z-depth-1-half map-container map-size" >
-                  <iframe src="https://maps.google.com/maps?q=Palm+Springs&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                     allowfullscreen></iframe>
+                  <iframe src="https://maps.google.com/maps?q=Palm+Springs&t=&z=15&ie=UTF8&iwloc=&output=embed" frameBorder="0"
+                     allowFullScreen></iframe>
                 </div>
               </div>
             </div>

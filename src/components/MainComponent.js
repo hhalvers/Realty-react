@@ -10,7 +10,7 @@ import ContactUs from './ContactUs';
 import { PROPERTIES_FOR_SALE } from "../shared/saleProperties"
 import { PROPERTIES_FOR_RENT } from "../shared/rentProperties"
 import { OUR_AGENTS } from "../shared/ourAgents"
-
+import { BrowserRouter as Router, Switch, Route, Link  } from "react-router-dom";
 
 class Main extends Component {
     constructor(props) {
@@ -31,12 +31,15 @@ class Main extends Component {
         return (
             <div>
                 <Header />
-                <MainImage />
-                <PropertiesForSale saleProps={this.state.saleProps}/>
-                <PropertiesForRent rentProps={this.state.rentProps}/>
-                <ContactUs />
-                <DisplayMap />
-                <OurAgents agentProps={this.state.agentProps} />
+                <Switch>
+                    <Route exact path='/' component={MainImage} />
+                  <Route path='/home' component={MainImage} />
+                  <Route exact path='/forSale' render={() => <PropertiesForSale saleProps={this.state.saleProps} />} />
+                  <Route exact path='/forRent' render={() => <PropertiesForRent rentProps={this.state.rentProps} />} />
+                  <Route path='/contactus' component={ContactUs} />
+                  <Route path='/map' component={DisplayMap} />
+                  <Route exact path='/agents' render={() => <OurAgents agentProps={this.state.agentProps} />} />
+                </Switch>
                 <Footer />
             </div>
         );
