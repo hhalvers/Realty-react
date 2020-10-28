@@ -73,16 +73,21 @@ body {
   padding-top: 40px;
   padding-bottom: 40px; }
 
-#ourAgents {
+.ourAgents {
   text-align: center;
   padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+ }
+
+.ourAgents #agentDescription {
+  text-align: left;
+}
 
 #ourAgents img {
   padding-left: 20px;
   padding-right: 20px; }
 
-#ourAgents .card {
+.ourAgents .card {
   border: none; }
 
 #ourAgents a {
@@ -105,6 +110,10 @@ body {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px; }
+
+  .map-size {
+    height: 500px;
+}
 
 #contactUs {
   background: #f9d3a1;
