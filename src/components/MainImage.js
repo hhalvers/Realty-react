@@ -17,7 +17,7 @@ class MainImage extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="row propertiesCount">
+                {/* <div className="row propertiesCount">
                     <div className="col">
                         <h3>Properties for Sale</h3>
                     </div>
@@ -36,7 +36,7 @@ class MainImage extends Component {
                         <p>New Properties this month</p>
 
                     </div>
-                </div>
+                </div> */}
             </div>
         );
     }

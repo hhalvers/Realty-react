@@ -62,10 +62,12 @@ body {
   padding-bottom: 20px; }
 
 .propertiesCount {
-  background: #f9d3a1;
+  background: lightgrey;
   text-align: center;
   padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  display: hide;
+ }
 
 #Contacts {
   background: #f9d3a1;
