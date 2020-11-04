@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
+import GoogleMapReact from 'google-map-react'
+import '../css/map.css'
 
 function DisplayMap() {
 

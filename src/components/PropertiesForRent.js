@@ -10,7 +10,7 @@ function PropertiesForRent(props) {
 
         return (
             <div key={home.id} className="col-md-3 d-flex align-items-stretch">
-                <DisplayHomeCard home={home} />
+                <DisplayHomeCard type="forRent" home={home} />
             </div>
         );
     });
